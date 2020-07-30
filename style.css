@@ -1,0 +1,32 @@
+body{
+    overflow: hidden;
+   
+}
+main{
+    background-color: #979c9a;
+}
+
+.main-display{
+    font-size: 25px;
+    font-weight: bold;
+}
+.calculator{
+    height: 400px;
+    width: 300px;
+    background: rgb(196, 196, 196);
+    padding: 15px;
+    border: 1px solid #777;
+}
+.main-display{
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.btn{
+    font-size: 20px;
+    cursor: pointer;
+    width: 61px;
+}
+.last input{
+    width: 83px;
+}

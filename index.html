@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>JS calculator</title>
+  </head>
+  <body>
+      <main>
+          
+        <div class="container-fluid py-5">
+            
+            <div class="row">
+                <div class="col-12  main-area">
+                 <div class="calculator mx-auto">
+                     <form action="" name="form">
+                         <input type="text" class="form-control main-display" value="" name="display" placeholder="0">
+             
+                         <div class="button-area">
+                             <div class="line">
+                                 
+                                 <input type="button" value="7" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="8" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="9" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="/" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+     
+                             </div>
+     
+                             <div class="line">
+                                 
+                                 <input type="button" value="4" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="5" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="6" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="*" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+     
+                             </div>
+     
+                             <div class="line">
+                                 
+                                 <input type="button" value="1" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="2" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="3" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="-" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+     
+                             </div>
+     
+                             <div class="line">
+                                 
+                                 <input type="button" value="0" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="00" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="." name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+                                 <input type="button" value="+" name="btn" class="btn btn-primary my-2" onclick="calculate(this.value) ">
+     
+                             </div>
+     
+                             <div class="last">
+                                 
+                                 <input type="button" value="x" name="btn" class="btn btn-warning my-2" onclick="runback()">
+                                 <input type="button" value="C" name="btn" class="btn btn-danger my-2" onclick="display.value=null ">
+                                 <input type="button" value="=" name="btn" class="btn btn-success my-2" onclick="display.value=eval(display.value) ">
+     
+                             </div>
+     
+     
+     
+                         </div>
+                     </form>
+                 </div>
+                </div>
+     
+            </div>
+        </div>
+      </main>
+      <div class="container">
+          <div class="row  bg-dark text-light">
+              <div class="col-12">
+                  <hr><hr>
+                  <h5 class="text-center">Design By <strong class="text-danger">Mamun</strong> </h5>
+                  <hr><hr>
+              </div>
+          </div>
+      </div>
+   
+    <script>
+        function calculate(x){
+            form.display.value =form.display.value + x ;
+        }
+        function runback(){
+            var val = document.form.display.value.slice(0, -1);
+            document.form.display.value = val;
+        }
+    </script>
+
+  
+  </body>
+</html>
